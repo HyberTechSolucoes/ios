@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		546FAD241ECBAD48003BD7F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FAD231ECBAD48003BD7F4 /* AppDelegate.swift */; };
+		546FAD261ECBAD48003BD7F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FAD251ECBAD48003BD7F4 /* ViewController.swift */; };
+		546FAD291ECBAD48003BD7F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546FAD271ECBAD48003BD7F4 /* Main.storyboard */; };
+		546FAD2C1ECBAD48003BD7F4 /* miloo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 546FAD2A1ECBAD48003BD7F4 /* miloo.xcdatamodeld */; };
+		546FAD2E1ECBAD48003BD7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546FAD2D1ECBAD48003BD7F4 /* Assets.xcassets */; };
+		546FAD311ECBAD48003BD7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546FAD2F1ECBAD48003BD7F4 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		546FAD201ECBAD48003BD7F4 /* miloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		546FAD231ECBAD48003BD7F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		546FAD251ECBAD48003BD7F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		546FAD281ECBAD48003BD7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		546FAD2B1ECBAD48003BD7F4 /* miloo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = miloo.xcdatamodel; sourceTree = "<group>"; };
+		546FAD2D1ECBAD48003BD7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		546FAD301ECBAD48003BD7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		546FAD321ECBAD48003BD7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		546FAD1D1ECBAD48003BD7F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		546FAD171ECBAD48003BD7F4 = {
+			isa = PBXGroup;
+			children = (
+				546FAD221ECBAD48003BD7F4 /* miloo */,
+				546FAD211ECBAD48003BD7F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		546FAD211ECBAD48003BD7F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				546FAD201ECBAD48003BD7F4 /* miloo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		546FAD221ECBAD48003BD7F4 /* miloo */ = {
+			isa = PBXGroup;
+			children = (
+				546FAD3A1ECBADB5003BD7F4 /* VIews */,
+				546FAD391ECBADA9003BD7F4 /* Controllers */,
+				546FAD381ECBAD9F003BD7F4 /* Models */,
+				546FAD231ECBAD48003BD7F4 /* AppDelegate.swift */,
+				546FAD251ECBAD48003BD7F4 /* ViewController.swift */,
+				546FAD271ECBAD48003BD7F4 /* Main.storyboard */,
+				546FAD2D1ECBAD48003BD7F4 /* Assets.xcassets */,
+				546FAD2F1ECBAD48003BD7F4 /* LaunchScreen.storyboard */,
+				546FAD321ECBAD48003BD7F4 /* Info.plist */,
+				546FAD2A1ECBAD48003BD7F4 /* miloo.xcdatamodeld */,
+			);
+			path = miloo;
+			sourceTree = "<group>";
+		};
+		546FAD381ECBAD9F003BD7F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		546FAD391ECBADA9003BD7F4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		546FAD3A1ECBADB5003BD7F4 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = VIews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		546FAD1F1ECBAD48003BD7F4 /* miloo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 546FAD351ECBAD48003BD7F4 /* Build configuration list for PBXNativeTarget "miloo" */;
+			buildPhases = (
+				546FAD1C1ECBAD48003BD7F4 /* Sources */,
+				546FAD1D1ECBAD48003BD7F4 /* Frameworks */,
+				546FAD1E1ECBAD48003BD7F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = miloo;
+			productName = miloo;
+			productReference = 546FAD201ECBAD48003BD7F4 /* miloo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		546FAD181ECBAD48003BD7F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Andre Rosa";
+				TargetAttributes = {
+					546FAD1F1ECBAD48003BD7F4 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = K27EE7EUGC;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 546FAD1B1ECBAD48003BD7F4 /* Build configuration list for PBXProject "miloo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 546FAD171ECBAD48003BD7F4;
+			productRefGroup = 546FAD211ECBAD48003BD7F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				546FAD1F1ECBAD48003BD7F4 /* miloo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		546FAD1E1ECBAD48003BD7F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546FAD311ECBAD48003BD7F4 /* LaunchScreen.storyboard in Resources */,
+				546FAD2E1ECBAD48003BD7F4 /* Assets.xcassets in Resources */,
+				546FAD291ECBAD48003BD7F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		546FAD1C1ECBAD48003BD7F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546FAD261ECBAD48003BD7F4 /* ViewController.swift in Sources */,
+				546FAD241ECBAD48003BD7F4 /* AppDelegate.swift in Sources */,
+				546FAD2C1ECBAD48003BD7F4 /* miloo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		546FAD271ECBAD48003BD7F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				546FAD281ECBAD48003BD7F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		546FAD2F1ECBAD48003BD7F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				546FAD301ECBAD48003BD7F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		546FAD331ECBAD48003BD7F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		546FAD341ECBAD48003BD7F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		546FAD361ECBAD48003BD7F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K27EE7EUGC;
+				INFOPLIST_FILE = miloo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andre.miloo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		546FAD371ECBAD48003BD7F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K27EE7EUGC;
+				INFOPLIST_FILE = miloo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andre.miloo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		546FAD1B1ECBAD48003BD7F4 /* Build configuration list for PBXProject "miloo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546FAD331ECBAD48003BD7F4 /* Debug */,
+				546FAD341ECBAD48003BD7F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		546FAD351ECBAD48003BD7F4 /* Build configuration list for PBXNativeTarget "miloo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546FAD361ECBAD48003BD7F4 /* Debug */,
+				546FAD371ECBAD48003BD7F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		546FAD2A1ECBAD48003BD7F4 /* miloo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				546FAD2B1ECBAD48003BD7F4 /* miloo.xcdatamodel */,
+			);
+			currentVersion = 546FAD2B1ECBAD48003BD7F4 /* miloo.xcdatamodel */;
+			path = miloo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 546FAD181ECBAD48003BD7F4 /* Project object */;
+}
