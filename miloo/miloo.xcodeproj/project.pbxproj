@@ -13,6 +13,8 @@
 		546FAD2C1ECBAD48003BD7F4 /* miloo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 546FAD2A1ECBAD48003BD7F4 /* miloo.xcdatamodeld */; };
 		546FAD2E1ECBAD48003BD7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546FAD2D1ECBAD48003BD7F4 /* Assets.xcassets */; };
 		546FAD311ECBAD48003BD7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546FAD2F1ECBAD48003BD7F4 /* LaunchScreen.storyboard */; };
+		929F461B1ECBC98D004CFAC8 /* CadastroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F461A1ECBC98D004CFAC8 /* CadastroVC.swift */; };
+		929F461D1ECBCAEB004CFAC8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F461C1ECBCAEB004CFAC8 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		546FAD2D1ECBAD48003BD7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546FAD301ECBAD48003BD7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546FAD321ECBAD48003BD7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929F461A1ECBC98D004CFAC8 /* CadastroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroVC.swift; sourceTree = "<group>"; };
+		929F461C1ECBCAEB004CFAC8 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 		546FAD391ECBADA9003BD7F4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				929F461A1ECBC98D004CFAC8 /* CadastroVC.swift */,
+				929F461C1ECBCAEB004CFAC8 /* LoginVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -166,7 +172,9 @@
 			files = (
 				546FAD261ECBAD48003BD7F4 /* ViewController.swift in Sources */,
 				546FAD241ECBAD48003BD7F4 /* AppDelegate.swift in Sources */,
+				929F461B1ECBC98D004CFAC8 /* CadastroVC.swift in Sources */,
 				546FAD2C1ECBAD48003BD7F4 /* miloo.xcdatamodeld in Sources */,
+				929F461D1ECBCAEB004CFAC8 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +342,7 @@
 				546FAD371ECBAD48003BD7F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
