@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O8j-wU-7Y6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Bst-eG-TxA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O8j-wU-7Y6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="bag_icon" selectedImage="bag_icon" id="OtB-y0-35C">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xgj-qY-wdn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sRM-kL-zje" kind="relationship" relationship="rootViewController" id="3Ez-fg-a0a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AO5-Ao-EUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="887"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rYm-PF-7Z2">
+            <objects>
+                <viewController id="sRM-kL-zje" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zyB-6X-81l"/>
+                        <viewControllerLayoutGuide type="bottom" id="2p7-vJ-S2v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sWh-fT-jf0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kge-hU-JXu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Hc-gj-0LI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527" y="887"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bag_icon" width="28" height="28"/>
+    </resources>
+</document>

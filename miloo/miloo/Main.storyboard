@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ozd-6C-K9m">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Qyf-XK-byr">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ozd-6C-K9m" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="rdX-Bo-Ygn">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1gr-Hb-Fra" kind="relationship" relationship="viewControllers" id="kod-vb-A2T"/>
+                        <segue destination="45w-4o-1bN" kind="relationship" relationship="viewControllers" id="4h3-X5-fAO"/>
+                        <segue destination="f4W-b6-bWW" kind="relationship" relationship="viewControllers" id="ISK-5P-05P"/>
+                        <segue destination="u2j-nX-z9J" kind="relationship" relationship="viewControllers" id="1IK-9u-qnf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocG-zc-oQ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95.200000000000003" y="129.98500749625188"/>
+        </scene>
+        <!--Busca-->
+        <scene sceneID="9Na-Yn-UOi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Busca" id="1gr-Hb-Fra" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="busca_icon" selectedImage="busca_icon" id="EVy-zc-Yza"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LRq-ef-bGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-551" y="575"/>
+        </scene>
+        <!--Profissional-->
+        <scene sceneID="73u-lf-Kbu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profissional" id="45w-4o-1bN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="bag_icon" selectedImage="bag_icon" id="2v4-Tv-FpN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ug6-Ow-HAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312" y="638"/>
+        </scene>
+        <!--Notificacoes-->
+        <scene sceneID="Ccq-Ya-EHP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Notificacoes" id="f4W-b6-bWW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="bell_icon" selectedImage="bell_icon" id="7VA-W1-vfu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RD2-yj-9y5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="638"/>
+        </scene>
+        <!--Eu-->
+        <scene sceneID="ruX-o9-7ts">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Eu" id="u2j-nX-z9J" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="eu_icon" selectedImage="eu_icon" id="5RI-j0-B0q"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rds-nX-1Fr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397" y="575"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bag_icon" width="28" height="28"/>
+        <image name="bell_icon" width="25" height="25"/>
+        <image name="busca_icon" width="25" height="25"/>
+        <image name="eu_icon" width="25" height="25"/>
+    </resources>
+</document>

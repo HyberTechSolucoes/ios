@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="02Z-ne-Dg0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="gfo-hr-qRv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="02Z-ne-Dg0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" image="busca_icon" selectedImage="busca_icon" id="FLH-TF-ixQ">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="exS-oV-8XS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RSw-Fb-nJz" kind="relationship" relationship="rootViewController" id="dG6-1f-aB7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHv-fB-BeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1198" y="887"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8w8-xk-W6T">
+            <objects>
+                <viewController id="RSw-Fb-nJz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X6R-NU-ibj"/>
+                        <viewControllerLayoutGuide type="bottom" id="yMn-eN-rY5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YiG-al-r8f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DXH-xd-qbD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIa-Yr-SxN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-265" y="887"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="busca_icon" width="25" height="25"/>
+    </resources>
+</document>
