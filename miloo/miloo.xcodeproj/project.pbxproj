@@ -18,9 +18,16 @@
 		54B9A74E1ED405A700467DCE /* Profissional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B9A74D1ED405A700467DCE /* Profissional.storyboard */; };
 		54B9A7501ED405B800467DCE /* Notificacoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B9A74F1ED405B800467DCE /* Notificacoes.storyboard */; };
 		54B9A7521ED405C900467DCE /* Eu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B9A7511ED405C900467DCE /* Eu.storyboard */; };
+		92615AF01ED5F16900CAB30B /* NovoEnderecoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92615AEF1ED5F16900CAB30B /* NovoEnderecoTVC.swift */; };
+		92615AF21ED6176900CAB30B /* IndiqueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92615AF11ED6176900CAB30B /* IndiqueVC.swift */; };
 		926690741ECC826B005896F9 /* EsqueciSenhaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926690731ECC826B005896F9 /* EsqueciSenhaVC.swift */; };
+		9298319A1ED51D1E00506542 /* MeusDadosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929831991ED51D1E00506542 /* MeusDadosTVC.swift */; };
+		9298319C1ED5BE2400506542 /* EnderecoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298319B1ED5BE2400506542 /* EnderecoCell.swift */; };
+		9298319E1ED5C0FC00506542 /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298319D1ED5C0FC00506542 /* Endereco.swift */; };
+		929831A01ED5C3A600506542 /* MeusEnderecosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298319F1ED5C3A600506542 /* MeusEnderecosTVC.swift */; };
 		929F461B1ECBC98D004CFAC8 /* CadastroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F461A1ECBC98D004CFAC8 /* CadastroVC.swift */; };
 		929F461D1ECBCAEB004CFAC8 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929F461C1ECBCAEB004CFAC8 /* LoginVC.swift */; };
+		92CA631C1ED5D52800A34AE8 /* ConfigTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA631B1ED5D52800A34AE8 /* ConfigTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +44,16 @@
 		54B9A74D1ED405A700467DCE /* Profissional.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profissional.storyboard; sourceTree = "<group>"; };
 		54B9A74F1ED405B800467DCE /* Notificacoes.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Notificacoes.storyboard; sourceTree = "<group>"; };
 		54B9A7511ED405C900467DCE /* Eu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Eu.storyboard; sourceTree = "<group>"; };
+		92615AEF1ED5F16900CAB30B /* NovoEnderecoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoEnderecoTVC.swift; sourceTree = "<group>"; };
+		92615AF11ED6176900CAB30B /* IndiqueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndiqueVC.swift; sourceTree = "<group>"; };
 		926690731ECC826B005896F9 /* EsqueciSenhaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EsqueciSenhaVC.swift; sourceTree = "<group>"; };
+		929831991ED51D1E00506542 /* MeusDadosTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusDadosTVC.swift; sourceTree = "<group>"; };
+		9298319B1ED5BE2400506542 /* EnderecoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnderecoCell.swift; sourceTree = "<group>"; };
+		9298319D1ED5C0FC00506542 /* Endereco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
+		9298319F1ED5C3A600506542 /* MeusEnderecosTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusEnderecosTVC.swift; sourceTree = "<group>"; };
 		929F461A1ECBC98D004CFAC8 /* CadastroVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroVC.swift; sourceTree = "<group>"; };
 		929F461C1ECBCAEB004CFAC8 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		92CA631B1ED5D52800A34AE8 /* ConfigTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +101,7 @@
 		546FAD381ECBAD9F003BD7F4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9298319D1ED5C0FC00506542 /* Endereco.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -98,6 +113,11 @@
 				929F461A1ECBC98D004CFAC8 /* CadastroVC.swift */,
 				929F461C1ECBCAEB004CFAC8 /* LoginVC.swift */,
 				926690731ECC826B005896F9 /* EsqueciSenhaVC.swift */,
+				929831991ED51D1E00506542 /* MeusDadosTVC.swift */,
+				9298319F1ED5C3A600506542 /* MeusEnderecosTVC.swift */,
+				92CA631B1ED5D52800A34AE8 /* ConfigTVC.swift */,
+				92615AEF1ED5F16900CAB30B /* NovoEnderecoTVC.swift */,
+				92615AF11ED6176900CAB30B /* IndiqueVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -105,6 +125,7 @@
 		546FAD3A1ECBADB5003BD7F4 /* VIews */ = {
 			isa = PBXGroup;
 			children = (
+				9298319B1ED5BE2400506542 /* EnderecoCell.swift */,
 			);
 			name = VIews;
 			sourceTree = "<group>";
@@ -201,10 +222,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92615AF21ED6176900CAB30B /* IndiqueVC.swift in Sources */,
+				929831A01ED5C3A600506542 /* MeusEnderecosTVC.swift in Sources */,
+				9298319A1ED51D1E00506542 /* MeusDadosTVC.swift in Sources */,
 				926690741ECC826B005896F9 /* EsqueciSenhaVC.swift in Sources */,
+				9298319C1ED5BE2400506542 /* EnderecoCell.swift in Sources */,
 				546FAD261ECBAD48003BD7F4 /* ViewController.swift in Sources */,
+				92CA631C1ED5D52800A34AE8 /* ConfigTVC.swift in Sources */,
 				546FAD241ECBAD48003BD7F4 /* AppDelegate.swift in Sources */,
 				929F461B1ECBC98D004CFAC8 /* CadastroVC.swift in Sources */,
+				92615AF01ED5F16900CAB30B /* NovoEnderecoTVC.swift in Sources */,
+				9298319E1ED5C0FC00506542 /* Endereco.swift in Sources */,
 				546FAD2C1ECBAD48003BD7F4 /* miloo.xcdatamodeld in Sources */,
 				929F461D1ECBCAEB004CFAC8 /* LoginVC.swift in Sources */,
 			);
