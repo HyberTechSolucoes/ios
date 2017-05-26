@@ -18,6 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.91660505530000003" green="0.28786611560000003" blue="0.2862999141" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.28627450980000002" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="1gr-Hb-Fra" kind="relationship" relationship="viewControllers" id="kod-vb-A2T"/>
@@ -92,8 +94,8 @@
     </scenes>
     <resources>
         <image name="bag_icon" width="28" height="28"/>
-        <image name="bell_icon" width="25" height="25"/>
+        <image name="bell_icon" width="27" height="26"/>
         <image name="busca_icon" width="25" height="25"/>
-        <image name="eu_icon" width="25" height="25"/>
+        <image name="eu_icon" width="26" height="26"/>
     </resources>
 </document>

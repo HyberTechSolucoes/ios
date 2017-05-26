@@ -13,6 +13,12 @@
 		546FAD2C1ECBAD48003BD7F4 /* miloo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 546FAD2A1ECBAD48003BD7F4 /* miloo.xcdatamodeld */; };
 		546FAD2E1ECBAD48003BD7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546FAD2D1ECBAD48003BD7F4 /* Assets.xcassets */; };
 		546FAD311ECBAD48003BD7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546FAD2F1ECBAD48003BD7F4 /* LaunchScreen.storyboard */; };
+		54703B4A1ED7895D004426FA /* ServicoCategoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54703B491ED7895D004426FA /* ServicoCategoria.swift */; };
+		54703B4C1ED78CBD004426FA /* ServicosCategoriasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54703B4B1ED78CBD004426FA /* ServicosCategoriasTVC.swift */; };
+		54703B501ED78D9F004426FA /* ServicoCategoriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54703B4F1ED78D9F004426FA /* ServicoCategoriaCell.swift */; };
+		54703B521ED7DD6F004426FA /* ResultadoBusca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54703B511ED7DD6F004426FA /* ResultadoBusca.swift */; };
+		54703B541ED7E80A004426FA /* ResultadoBuscaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54703B531ED7E80A004426FA /* ResultadoBuscaCell.swift */; };
+		54703B571ED7EB8D004426FA /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54703B561ED7EB8D004426FA /* RoundedImage.swift */; };
 		54B9A74A1ED3FE0400467DCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B9A7491ED3FE0400467DCE /* Main.storyboard */; };
 		54B9A74C1ED4057700467DCE /* Busca.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B9A74B1ED4057700467DCE /* Busca.storyboard */; };
 		54B9A74E1ED405A700467DCE /* Profissional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B9A74D1ED405A700467DCE /* Profissional.storyboard */; };
@@ -39,6 +45,12 @@
 		546FAD2D1ECBAD48003BD7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		546FAD301ECBAD48003BD7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546FAD321ECBAD48003BD7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54703B491ED7895D004426FA /* ServicoCategoria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicoCategoria.swift; sourceTree = "<group>"; };
+		54703B4B1ED78CBD004426FA /* ServicosCategoriasTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicosCategoriasTVC.swift; sourceTree = "<group>"; };
+		54703B4F1ED78D9F004426FA /* ServicoCategoriaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicoCategoriaCell.swift; sourceTree = "<group>"; };
+		54703B511ED7DD6F004426FA /* ResultadoBusca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadoBusca.swift; sourceTree = "<group>"; };
+		54703B531ED7E80A004426FA /* ResultadoBuscaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadoBuscaCell.swift; sourceTree = "<group>"; };
+		54703B561ED7EB8D004426FA /* RoundedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		54B9A7491ED3FE0400467DCE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		54B9A74B1ED4057700467DCE /* Busca.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Busca.storyboard; sourceTree = "<group>"; };
 		54B9A74D1ED405A700467DCE /* Profissional.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profissional.storyboard; sourceTree = "<group>"; };
@@ -86,8 +98,9 @@
 		546FAD221ECBAD48003BD7F4 /* miloo */ = {
 			isa = PBXGroup;
 			children = (
+				54703B551ED7EB68004426FA /* Styles */,
 				54B9A7461ED3FB9C00467DCE /* Storyboards */,
-				546FAD3A1ECBADB5003BD7F4 /* VIews */,
+				546FAD3A1ECBADB5003BD7F4 /* Views */,
 				546FAD391ECBADA9003BD7F4 /* Controllers */,
 				546FAD381ECBAD9F003BD7F4 /* Models */,
 				546FAD231ECBAD48003BD7F4 /* AppDelegate.swift */,
@@ -102,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				9298319D1ED5C0FC00506542 /* Endereco.swift */,
+				54703B491ED7895D004426FA /* ServicoCategoria.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -118,16 +132,28 @@
 				92CA631B1ED5D52800A34AE8 /* ConfigTVC.swift */,
 				92615AEF1ED5F16900CAB30B /* NovoEnderecoTVC.swift */,
 				92615AF11ED6176900CAB30B /* IndiqueVC.swift */,
+				54703B4B1ED78CBD004426FA /* ServicosCategoriasTVC.swift */,
+				54703B511ED7DD6F004426FA /* ResultadoBusca.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		546FAD3A1ECBADB5003BD7F4 /* VIews */ = {
+		546FAD3A1ECBADB5003BD7F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				9298319B1ED5BE2400506542 /* EnderecoCell.swift */,
+				54703B4F1ED78D9F004426FA /* ServicoCategoriaCell.swift */,
+				54703B531ED7E80A004426FA /* ResultadoBuscaCell.swift */,
 			);
-			name = VIews;
+			name = Views;
+			sourceTree = "<group>";
+		};
+		54703B551ED7EB68004426FA /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				54703B561ED7EB8D004426FA /* RoundedImage.swift */,
+			);
+			name = Styles;
 			sourceTree = "<group>";
 		};
 		54B9A7461ED3FB9C00467DCE /* Storyboards */ = {
@@ -223,11 +249,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				92615AF21ED6176900CAB30B /* IndiqueVC.swift in Sources */,
+				54703B4A1ED7895D004426FA /* ServicoCategoria.swift in Sources */,
+				54703B521ED7DD6F004426FA /* ResultadoBusca.swift in Sources */,
 				929831A01ED5C3A600506542 /* MeusEnderecosTVC.swift in Sources */,
 				9298319A1ED51D1E00506542 /* MeusDadosTVC.swift in Sources */,
 				926690741ECC826B005896F9 /* EsqueciSenhaVC.swift in Sources */,
 				9298319C1ED5BE2400506542 /* EnderecoCell.swift in Sources */,
 				546FAD261ECBAD48003BD7F4 /* ViewController.swift in Sources */,
+				54703B541ED7E80A004426FA /* ResultadoBuscaCell.swift in Sources */,
+				54703B501ED78D9F004426FA /* ServicoCategoriaCell.swift in Sources */,
+				54703B4C1ED78CBD004426FA /* ServicosCategoriasTVC.swift in Sources */,
+				54703B571ED7EB8D004426FA /* RoundedImage.swift in Sources */,
 				92CA631C1ED5D52800A34AE8 /* ConfigTVC.swift in Sources */,
 				546FAD241ECBAD48003BD7F4 /* AppDelegate.swift in Sources */,
 				929F461B1ECBC98D004CFAC8 /* CadastroVC.swift in Sources */,
