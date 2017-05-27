@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -140,8 +141,8 @@
         <!--Title-->
         <scene sceneID="K6f-7c-oHB">
             <objects>
-                <tableViewController id="6v6-zn-ymt" customClass="ResultadoBusca" customModule="miloo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="pTq-oh-KiI">
+                <tableViewController id="6v6-zn-ymt" customClass="ResultadoBuscaTVC" customModule="miloo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="178" sectionHeaderHeight="28" sectionFooterHeight="28" id="pTq-oh-KiI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -253,9 +254,6 @@
                                     <outlet property="PessoaMaisInfo" destination="4ti-yS-K4s" id="QiO-hN-EB3"/>
                                     <outlet property="PessoaNome" destination="HQE-TE-9uF" id="Hjp-Mi-EjG"/>
                                     <outlet property="ResultIcon" destination="qMj-KT-IBf" id="3dD-U8-l50"/>
-                                    <outlet property="background" destination="jio-JT-udw" id="3dh-U7-la4"/>
-                                    <outlet property="icon" destination="qMj-KT-IBf" id="e01-sB-FDe"/>
-                                    <outlet property="title" destination="HQE-TE-9uF" id="ztL-nS-jiZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -265,11 +263,22 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="00G-j0-kGo">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="T0e-jg-48R">
-                            <connections>
-                                <action selector="searchBtnPress:" destination="6v6-zn-ymt" id="DsR-tl-uOf"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="busca_icon" id="T0e-jg-48R">
+                                <inset key="imageInsets" minX="2" minY="5" maxX="2" maxY="5"/>
+                                <connections>
+                                    <action selector="searchBtnPress:" destination="6v6-zn-ymt" id="DsR-tl-uOf"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="filter_icon" id="B7P-mJ-hNJ">
+                                <inset key="imageInsets" minX="1" minY="4" maxX="1" maxY="4"/>
+                                <connections>
+                                    <segue destination="Y9O-DQ-Y0Q" kind="popoverPresentation" popoverAnchorBarButtonItem="B7P-mJ-hNJ" id="TpN-yA-eZK">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="07R-OM-Opj" id="E0v-uv-KdE"/>
@@ -289,13 +298,71 @@
             </objects>
             <point key="canvasLocation" x="389.60000000000002" y="886.50674662668678"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="b75-6h-iSa">
+            <objects>
+                <viewController id="Y9O-DQ-Y0Q" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AaQ-L6-HeN"/>
+                        <viewControllerLayoutGuide type="bottom" id="VR0-yD-uyI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yxd-RD-2aL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1p-VR-yKs">
+                                <rect key="frame" x="291" y="28" width="68" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Aplicar"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="G9f-oD-D0Q">
+                                <rect key="frame" x="100" y="158" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-Y1-g9C">
+                                <rect key="frame" x="100" y="219" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8r1-dK-r3H">
+                                <rect key="frame" x="100" y="309" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i93-K8-ilG">
+                                <rect key="frame" x="68" y="402" width="223" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="   Limpar todos os filtros" image="bag_icon"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92119485139846802" green="0.37421751022338867" blue="0.37024673819541931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1aY-Xc-5jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1208.8" y="886.50674662668678"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Daenerys-0" width="350" height="449"/>
+        <image name="bag_icon" width="28" height="28"/>
         <image name="busca_icon" width="25" height="25"/>
         <image name="cabelereiro_cover" width="375" height="178"/>
         <image name="casa_cover" width="375" height="178"/>
         <image name="casa_icon" width="67" height="67"/>
         <image name="estetica_icon" width="62" height="61"/>
+        <image name="filter_icon" width="26" height="21"/>
     </resources>
 </document>

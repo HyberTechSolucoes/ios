@@ -20,8 +20,13 @@ class ResultadoBuscaCell: UITableViewCell {
         super.awakeFromNib()
     }
 
-    func updateUI(){
-        
+    func updateUI(ResultadoBusca: ResultadoBusca){
+        Background.image = UIImage(named: ResultadoBusca.background)
+        ResultIcon.image = UIImage(named: ResultadoBusca.icon)
+        PessoaImg.image = UIImage(named: ResultadoBusca.userImage)
+        PessoaNome.text = ResultadoBusca.title
+        PessoaEndereco.text = ResultadoBusca.endereco
+        PessoaMaisInfo.text = ResultadoBusca.moreInfo
     }
 
 

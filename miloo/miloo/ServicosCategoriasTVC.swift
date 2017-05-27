@@ -12,11 +12,8 @@ class ServicosCategoriasTVC: UITableViewController{
 
     var listaServicosCategorias =  [ServicoCategoria]()
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
        
         for _ in 0...10{
             listaServicosCategorias.append(ServicoCategoria(background: "informatica_cover", title: "Informatica", icon: "informatica_icon"))
