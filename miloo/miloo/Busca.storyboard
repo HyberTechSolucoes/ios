@@ -298,10 +298,10 @@
             </objects>
             <point key="canvasLocation" x="389.60000000000002" y="886.50674662668678"/>
         </scene>
-        <!--View Controller-->
+        <!--Iltro BuscaVC-->
         <scene sceneID="b75-6h-iSa">
             <objects>
-                <viewController id="Y9O-DQ-Y0Q" sceneMemberID="viewController">
+                <viewController id="Y9O-DQ-Y0Q" customClass="FIltroBuscaVC" customModule="miloo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AaQ-L6-HeN"/>
                         <viewControllerLayoutGuide type="bottom" id="VR0-yD-uyI"/>
@@ -310,44 +310,166 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1p-VR-yKs">
-                                <rect key="frame" x="291" y="28" width="68" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1p-VR-yKs">
+                                <rect key="frame" x="16" y="28" width="19" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="19" id="Vm7-NA-U1o"/>
+                                    <constraint firstAttribute="height" constant="17" id="f3q-jk-eTt"/>
+                                </constraints>
+                                <state key="normal" image="cancel_icon"/>
+                                <connections>
+                                    <action selector="fecharFiltro:" destination="Y9O-DQ-Y0Q" eventType="touchUpInside" id="jmr-Nr-9J1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krj-HU-aB0">
+                                <rect key="frame" x="302" y="28" width="57" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="MFL-Qc-8fH"/>
+                                    <constraint firstAttribute="height" constant="21" id="VkJ-fY-uHL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Aplicar"/>
+                                <connections>
+                                    <action selector="aplicarFiltro:" destination="Y9O-DQ-Y0Q" eventType="touchUpInside" id="Iuk-jw-tKw"/>
+                                </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="G9f-oD-D0Q">
-                                <rect key="frame" x="100" y="158" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-Y1-g9C">
-                                <rect key="frame" x="100" y="219" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8r1-dK-r3H">
-                                <rect key="frame" x="100" y="309" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i93-K8-ilG">
-                                <rect key="frame" x="68" y="402" width="223" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="   Limpar todos os filtros" image="bag_icon"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="I4q-z4-qCb">
+                                <rect key="frame" x="16" y="89" width="343" height="268"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="G9f-oD-D0Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="Mais relevantes"/>
+                                            <segment title="Menor preço"/>
+                                            <segment title="Maior preço"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="filtroOrdem:" destination="Y9O-DQ-Y0Q" eventType="valueChanged" id="XIT-uj-F3l"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VWm-FL-qaR">
+                                        <rect key="frame" x="0.0" y="68" width="343" height="12"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6w5-8w-Xrh">
+                                                <rect key="frame" x="0.0" y="5.5" width="131" height="1"/>
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="rWi-Rb-T6a"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atendimento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2K-jc-2fl">
+                                                <rect key="frame" x="139" y="0.0" width="65" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="b3h-cS-hrm"/>
+                                                    <constraint firstAttribute="width" constant="65" id="edX-Qp-Mml"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9So-5T-xED">
+                                                <rect key="frame" x="212" y="5.5" width="131" height="1"/>
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="1Uj-QE-w3D"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="w2K-jc-2fl" firstAttribute="centerX" secondItem="VWm-FL-qaR" secondAttribute="centerX" id="2xk-mh-L7a"/>
+                                        </constraints>
+                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-Y1-g9C">
+                                        <rect key="frame" x="0.0" y="120" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="Domicílio"/>
+                                            <segment title="Local"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="filtroAtendimento:" destination="Y9O-DQ-Y0Q" eventType="valueChanged" id="Y2o-4T-T8Z"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="go0-V0-Yru">
+                                        <rect key="frame" x="0.0" y="188" width="343" height="12"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IxV-sq-j0p">
+                                                <rect key="frame" x="0.0" y="5.5" width="133" height="1"/>
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="rJx-RR-4Gs"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pagamento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nya-PG-XJC">
+                                                <rect key="frame" x="141" y="0.0" width="60" height="12"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="12" id="7Sk-qV-oeu"/>
+                                                    <constraint firstAttribute="width" constant="60" id="p7y-RZ-8ve"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nvc-sk-pgb">
+                                                <rect key="frame" x="209" y="5.5" width="134" height="1"/>
+                                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="Mjo-81-185"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Nya-PG-XJC" firstAttribute="centerX" secondItem="go0-V0-Yru" secondAttribute="centerX" id="FUs-BN-Ym3"/>
+                                        </constraints>
+                                    </stackView>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8r1-dK-r3H">
+                                        <rect key="frame" x="0.0" y="240" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="Dinheiro"/>
+                                            <segment title="C/ Crédito"/>
+                                            <segment title="C/ Débito"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="filtroPagamento:" destination="Y9O-DQ-Y0Q" eventType="valueChanged" id="RF7-fr-NqL"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8r1-dK-r3H" firstAttribute="width" secondItem="I4q-z4-qCb" secondAttribute="width" id="ACR-lB-hwd"/>
+                                    <constraint firstAttribute="trailing" secondItem="VWm-FL-qaR" secondAttribute="trailing" id="BVx-Lo-bk6"/>
+                                    <constraint firstItem="c2h-Y1-g9C" firstAttribute="width" secondItem="I4q-z4-qCb" secondAttribute="width" id="Geq-P1-3AY"/>
+                                    <constraint firstItem="G9f-oD-D0Q" firstAttribute="width" secondItem="I4q-z4-qCb" secondAttribute="width" id="a01-xr-6kX"/>
+                                    <constraint firstItem="VWm-FL-qaR" firstAttribute="width" secondItem="I4q-z4-qCb" secondAttribute="width" id="ihF-6e-TFJ"/>
+                                    <constraint firstItem="VWm-FL-qaR" firstAttribute="leading" secondItem="I4q-z4-qCb" secondAttribute="leading" id="nz6-KS-uIQ"/>
+                                    <constraint firstItem="go0-V0-Yru" firstAttribute="width" secondItem="I4q-z4-qCb" secondAttribute="width" id="sxK-VS-SBD"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i93-K8-ilG">
+                                <rect key="frame" x="76" y="417" width="223" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="223" id="fmh-wf-VIy"/>
+                                    <constraint firstAttribute="height" constant="28" id="lE9-dp-fDH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="   Limpar todos filtros" image="trash_icon"/>
+                                <connections>
+                                    <action selector="limparFiltros:" destination="Y9O-DQ-Y0Q" eventType="touchUpInside" id="r5I-tR-i1u"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.92119485139846802" green="0.37421751022338867" blue="0.37024673819541931" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.37254901960784315" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I4q-z4-qCb" firstAttribute="centerX" secondItem="yxd-RD-2aL" secondAttribute="centerX" id="GmG-PL-iKS"/>
+                            <constraint firstItem="I4q-z4-qCb" firstAttribute="top" secondItem="krj-HU-aB0" secondAttribute="bottom" constant="40" id="Qxc-xK-of3"/>
+                            <constraint firstItem="i93-K8-ilG" firstAttribute="top" secondItem="I4q-z4-qCb" secondAttribute="bottom" constant="60" id="Xz7-zO-nL1"/>
+                            <constraint firstItem="B1p-VR-yKs" firstAttribute="leading" secondItem="yxd-RD-2aL" secondAttribute="leadingMargin" id="gct-FK-De7"/>
+                            <constraint firstItem="krj-HU-aB0" firstAttribute="top" secondItem="AaQ-L6-HeN" secondAttribute="bottom" constant="8" id="kaL-sJ-ieY"/>
+                            <constraint firstItem="krj-HU-aB0" firstAttribute="trailing" secondItem="yxd-RD-2aL" secondAttribute="trailingMargin" id="m9G-Xf-jgt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="I4q-z4-qCb" secondAttribute="trailing" id="qm9-hG-jpZ"/>
+                            <constraint firstItem="I4q-z4-qCb" firstAttribute="leading" secondItem="yxd-RD-2aL" secondAttribute="leadingMargin" id="vSv-ag-sJK"/>
+                            <constraint firstItem="i93-K8-ilG" firstAttribute="centerX" secondItem="yxd-RD-2aL" secondAttribute="centerX" id="wIW-4v-QG6"/>
+                            <constraint firstItem="B1p-VR-yKs" firstAttribute="top" secondItem="AaQ-L6-HeN" secondAttribute="bottom" constant="8" id="wWr-YU-lOp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aY-Xc-5jz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -357,12 +479,13 @@
     </scenes>
     <resources>
         <image name="Daenerys-0" width="350" height="449"/>
-        <image name="bag_icon" width="28" height="28"/>
         <image name="busca_icon" width="25" height="25"/>
         <image name="cabelereiro_cover" width="375" height="178"/>
+        <image name="cancel_icon" width="14" height="14"/>
         <image name="casa_cover" width="375" height="178"/>
         <image name="casa_icon" width="67" height="67"/>
         <image name="estetica_icon" width="62" height="61"/>
         <image name="filter_icon" width="26" height="21"/>
+        <image name="trash_icon" width="12" height="16"/>
     </resources>
 </document>

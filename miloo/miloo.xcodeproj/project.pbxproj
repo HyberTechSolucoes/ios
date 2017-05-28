@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5423C02F1ED8F42900B22584 /* ResultadoBusca.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5423C02E1ED8F42900B22584 /* ResultadoBusca.swift */; };
+		5423C0311EDA94D000B22584 /* FIltroBuscaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5423C0301EDA94D000B22584 /* FIltroBuscaVC.swift */; };
+		5423C0331EDA98AD00B22584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5423C0321EDA98AD00B22584 /* LaunchScreen.storyboard */; };
 		546FAD241ECBAD48003BD7F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FAD231ECBAD48003BD7F4 /* AppDelegate.swift */; };
 		546FAD261ECBAD48003BD7F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FAD251ECBAD48003BD7F4 /* ViewController.swift */; };
 		546FAD291ECBAD48003BD7F4 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546FAD271ECBAD48003BD7F4 /* Login.storyboard */; };
 		546FAD2C1ECBAD48003BD7F4 /* miloo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 546FAD2A1ECBAD48003BD7F4 /* miloo.xcdatamodeld */; };
 		546FAD2E1ECBAD48003BD7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546FAD2D1ECBAD48003BD7F4 /* Assets.xcassets */; };
-		546FAD311ECBAD48003BD7F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546FAD2F1ECBAD48003BD7F4 /* LaunchScreen.storyboard */; };
 		54703B4A1ED7895D004426FA /* ServicoCategoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54703B491ED7895D004426FA /* ServicoCategoria.swift */; };
 		54703B4C1ED78CBD004426FA /* ServicosCategoriasTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54703B4B1ED78CBD004426FA /* ServicosCategoriasTVC.swift */; };
 		54703B501ED78D9F004426FA /* ServicoCategoriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54703B4F1ED78D9F004426FA /* ServicoCategoriaCell.swift */; };
@@ -39,13 +40,14 @@
 
 /* Begin PBXFileReference section */
 		5423C02E1ED8F42900B22584 /* ResultadoBusca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadoBusca.swift; sourceTree = "<group>"; };
+		5423C0301EDA94D000B22584 /* FIltroBuscaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIltroBuscaVC.swift; sourceTree = "<group>"; };
+		5423C0321EDA98AD00B22584 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546FAD201ECBAD48003BD7F4 /* miloo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miloo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546FAD231ECBAD48003BD7F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		546FAD251ECBAD48003BD7F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		546FAD281ECBAD48003BD7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		546FAD2B1ECBAD48003BD7F4 /* miloo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = miloo.xcdatamodel; sourceTree = "<group>"; };
 		546FAD2D1ECBAD48003BD7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		546FAD301ECBAD48003BD7F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		546FAD321ECBAD48003BD7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54703B491ED7895D004426FA /* ServicoCategoria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicoCategoria.swift; sourceTree = "<group>"; };
 		54703B4B1ED78CBD004426FA /* ServicosCategoriasTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicosCategoriasTVC.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				92615AF11ED6176900CAB30B /* IndiqueVC.swift */,
 				54703B4B1ED78CBD004426FA /* ServicosCategoriasTVC.swift */,
 				54703B511ED7DD6F004426FA /* ResultadoBuscaTVC.swift */,
+				5423C0301EDA94D000B22584 /* FIltroBuscaVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -163,12 +166,12 @@
 			isa = PBXGroup;
 			children = (
 				546FAD271ECBAD48003BD7F4 /* Login.storyboard */,
-				546FAD2F1ECBAD48003BD7F4 /* LaunchScreen.storyboard */,
 				54B9A7491ED3FE0400467DCE /* Main.storyboard */,
 				54B9A7511ED405C900467DCE /* Eu.storyboard */,
 				54B9A74F1ED405B800467DCE /* Notificacoes.storyboard */,
 				54B9A74D1ED405A700467DCE /* Profissional.storyboard */,
 				54B9A74B1ED4057700467DCE /* Busca.storyboard */,
+				5423C0321EDA98AD00B22584 /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -233,7 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546FAD311ECBAD48003BD7F4 /* LaunchScreen.storyboard in Resources */,
+				5423C0331EDA98AD00B22584 /* LaunchScreen.storyboard in Resources */,
 				54B9A7501ED405B800467DCE /* Notificacoes.storyboard in Resources */,
 				546FAD2E1ECBAD48003BD7F4 /* Assets.xcassets in Resources */,
 				546FAD291ECBAD48003BD7F4 /* Login.storyboard in Resources */,
@@ -255,6 +258,7 @@
 				54703B4A1ED7895D004426FA /* ServicoCategoria.swift in Sources */,
 				54703B521ED7DD6F004426FA /* ResultadoBuscaTVC.swift in Sources */,
 				929831A01ED5C3A600506542 /* MeusEnderecosTVC.swift in Sources */,
+				5423C0311EDA94D000B22584 /* FIltroBuscaVC.swift in Sources */,
 				5423C02F1ED8F42900B22584 /* ResultadoBusca.swift in Sources */,
 				9298319A1ED51D1E00506542 /* MeusDadosTVC.swift in Sources */,
 				926690741ECC826B005896F9 /* EsqueciSenhaVC.swift in Sources */,
@@ -283,14 +287,6 @@
 				546FAD281ECBAD48003BD7F4 /* Base */,
 			);
 			name = Login.storyboard;
-			sourceTree = "<group>";
-		};
-		546FAD2F1ECBAD48003BD7F4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				546FAD301ECBAD48003BD7F4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
