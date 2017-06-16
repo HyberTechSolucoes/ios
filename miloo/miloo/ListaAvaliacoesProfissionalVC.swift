@@ -32,7 +32,7 @@ class ListaAvaliacoesProfissionalVC: UIViewController, UITableViewDelegate, UITa
    
     
     @IBAction func ResponderBtnPress(_ sender: Any) {
-        self.tabBarController?.tabBar.isHidden = true
+       presentAlert(nome: "Nome Fulano")
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,4 +52,31 @@ class ListaAvaliacoesProfissionalVC: UIViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return avaliacoes.count
     }
+    
+    
+    func presentAlert(nome: String) {
+        let alertController = UIAlertController(title: "", message: "Respondendo a \(nome)", preferredStyle: .alert)
+        
+        let confirmAction = UIAlertAction(title: "Ok", style: .default) { (_) in
+            if (alertController.textFields?[0]) != nil {
+//                // store your data
+//                UserDefaults.standard.set(field.text, forKey: "userEmail")
+//                UserDefaults.standard.synchronize()
+            } else {
+                // user did not fill field
+            }
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel) { (_) in }
+        
+        alertController.addTextField { (textField) in
+            textField.placeholder = "Sua Resposta"
+        }
+        
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
 }

@@ -28,6 +28,7 @@
 		549D72D11EF222CC00EFD263 /* ListaAvaliacoesProfissionalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D72D01EF222CC00EFD263 /* ListaAvaliacoesProfissionalVC.swift */; };
 		549D72D31EF2232E00EFD263 /* Avaliacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D72D21EF2232E00EFD263 /* Avaliacao.swift */; };
 		549D72D51EF22A8D00EFD263 /* AvaliacaoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D72D41EF22A8D00EFD263 /* AvaliacaoCell.swift */; };
+		549D72D91EF45A2C00EFD263 /* InfoProfissionalTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549D72D81EF45A2C00EFD263 /* InfoProfissionalTVC.swift */; };
 		54B9A74A1ED3FE0400467DCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B9A7491ED3FE0400467DCE /* Main.storyboard */; };
 		54B9A74C1ED4057700467DCE /* Busca.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B9A74B1ED4057700467DCE /* Busca.storyboard */; };
 		54B9A74E1ED405A700467DCE /* Profissional.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B9A74D1ED405A700467DCE /* Profissional.storyboard */; };
@@ -69,6 +70,7 @@
 		549D72D01EF222CC00EFD263 /* ListaAvaliacoesProfissionalVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaAvaliacoesProfissionalVC.swift; sourceTree = "<group>"; };
 		549D72D21EF2232E00EFD263 /* Avaliacao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avaliacao.swift; sourceTree = "<group>"; };
 		549D72D41EF22A8D00EFD263 /* AvaliacaoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvaliacaoCell.swift; sourceTree = "<group>"; };
+		549D72D81EF45A2C00EFD263 /* InfoProfissionalTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoProfissionalTVC.swift; sourceTree = "<group>"; };
 		54B9A7491ED3FE0400467DCE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		54B9A74B1ED4057700467DCE /* Busca.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Busca.storyboard; sourceTree = "<group>"; };
 		54B9A74D1ED405A700467DCE /* Profissional.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profissional.storyboard; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				5423C0341EDD2D1900B22584 /* ResultadoBuscaDetalhesVC.swift */,
 				549D72CA1EF1EE8000EFD263 /* ListaServicosProfissionalVC.swift */,
 				549D72D01EF222CC00EFD263 /* ListaAvaliacoesProfissionalVC.swift */,
+				549D72D81EF45A2C00EFD263 /* InfoProfissionalTVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				92615AF01ED5F16900CAB30B /* NovoEnderecoTVC.swift in Sources */,
 				9298319E1ED5C0FC00506542 /* Endereco.swift in Sources */,
 				546FAD2C1ECBAD48003BD7F4 /* miloo.xcdatamodeld in Sources */,
+				549D72D91EF45A2C00EFD263 /* InfoProfissionalTVC.swift in Sources */,
 				929F461D1ECBCAEB004CFAC8 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
