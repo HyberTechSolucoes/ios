@@ -860,6 +860,11 @@
                                 <state key="normal" title="Adicionar serviço">
                                     <color key="titleColor" red="0.92103320359999996" green="0.37145754689999999" blue="0.36710354690000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3yc-mN-Saa" kind="popoverPresentation" identifier="editarServicoSG" popoverAnchorView="4DC-SO-7i3" id="eXD-kW-MZu">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kqI-gg-GZj">
                                 <rect key="frame" x="0.0" y="41" width="375" height="1"/>
@@ -872,7 +877,7 @@
                                 <rect key="frame" x="0.0" y="42" width="375" height="290"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServicoCell" rowHeight="117" id="MOt-1W-qIU" customClass="ServicoCell" customModule="miloo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServicoCell" rowHeight="117" id="MOt-1W-qIU" customClass="ServicoCell" customModule="miloo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="117"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MOt-1W-qIU" id="fTH-cw-9qt">
@@ -952,6 +957,142 @@
             </objects>
             <point key="canvasLocation" x="2000.8" y="1664.1679160419792"/>
         </scene>
+        <!--Editar Serviço-->
+        <scene sceneID="hd5-2B-Qfd">
+            <objects>
+                <tableViewController id="Zg7-Vh-RgJ" customClass="EditarServicoTVC" customModule="miloo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="6Yc-vg-inY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="26r-fT-ZmF">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VMe-er-hUC">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VMe-er-hUC" id="wRJ-sd-cke">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Titulo do Serviço" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dY9-J4-xql">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardAppearance="light" returnKeyType="continue"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dY9-J4-xql" firstAttribute="top" secondItem="wRJ-sd-cke" secondAttribute="top" id="S4n-zE-tsf"/>
+                                                <constraint firstAttribute="bottom" secondItem="dY9-J4-xql" secondAttribute="bottom" id="VMi-G4-ht2"/>
+                                                <constraint firstItem="dY9-J4-xql" firstAttribute="leading" secondItem="wRJ-sd-cke" secondAttribute="leading" constant="16" id="ZQ4-NO-w95"/>
+                                                <constraint firstAttribute="trailing" secondItem="dY9-J4-xql" secondAttribute="trailing" constant="16" id="lta-kj-8ry"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" tag="2" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iWE-wJ-Q75">
+                                        <rect key="frame" x="0.0" y="79" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iWE-wJ-Q75" id="BFO-g4-Qsa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Valor do Serviço" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RyG-yT-p9Q">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="light" returnKeyType="continue"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="RyG-yT-p9Q" secondAttribute="bottom" id="2iT-kW-tsj"/>
+                                                <constraint firstAttribute="trailing" secondItem="RyG-yT-p9Q" secondAttribute="trailing" constant="16" id="3vq-T2-gWh"/>
+                                                <constraint firstItem="RyG-yT-p9Q" firstAttribute="top" secondItem="BFO-g4-Qsa" secondAttribute="top" id="GSe-9R-ixR"/>
+                                                <constraint firstItem="RyG-yT-p9Q" firstAttribute="leading" secondItem="BFO-g4-Qsa" secondAttribute="leading" constant="16" id="gfX-Zz-wlw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="OPB-ah-rza">
+                                        <rect key="frame" x="0.0" y="123" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OPB-ah-rza" id="SB4-Uj-IG3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6C4-IS-uMD">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preço a combinar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abo-Lh-yhn">
+                                                            <rect key="frame" x="0.0" y="12" width="294" height="19.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3di-AK-rXS">
+                                                            <rect key="frame" x="294" y="6.5" width="51" height="31"/>
+                                                            <connections>
+                                                                <action selector="switchChange:" destination="Zg7-Vh-RgJ" eventType="valueChanged" id="7GX-UL-hmm"/>
+                                                            </connections>
+                                                        </switch>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6C4-IS-uMD" firstAttribute="leading" secondItem="SB4-Uj-IG3" secondAttribute="leading" constant="16" id="NX0-5U-wNM"/>
+                                                <constraint firstAttribute="bottom" secondItem="6C4-IS-uMD" secondAttribute="bottom" id="OoP-ix-gXu"/>
+                                                <constraint firstItem="6C4-IS-uMD" firstAttribute="top" secondItem="SB4-Uj-IG3" secondAttribute="top" id="rWu-8U-im7"/>
+                                                <constraint firstAttribute="trailing" secondItem="6C4-IS-uMD" secondAttribute="trailing" constant="16" id="tgr-SS-d4S"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="258" id="hUU-1M-IoO">
+                                        <rect key="frame" x="0.0" y="167" width="375" height="258"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hUU-1M-IoO" id="e56-iW-2k6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Descrição do serviço..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oqL-L2-9nU">
+                                                    <rect key="frame" x="12" y="0.0" width="351" height="257.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="light" returnKeyType="done"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="oqL-L2-9nU" secondAttribute="bottom" id="497-Wg-LHX"/>
+                                                <constraint firstItem="oqL-L2-9nU" firstAttribute="top" secondItem="e56-iW-2k6" secondAttribute="top" id="dEL-UU-3Wc"/>
+                                                <constraint firstAttribute="trailing" secondItem="oqL-L2-9nU" secondAttribute="trailing" constant="12" id="emC-HG-8JR"/>
+                                                <constraint firstItem="oqL-L2-9nU" firstAttribute="leading" secondItem="e56-iW-2k6" secondAttribute="leading" constant="12" id="wA2-u0-5Ng"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Zg7-Vh-RgJ" id="7th-QJ-eGL"/>
+                            <outlet property="delegate" destination="Zg7-Vh-RgJ" id="1Ng-jZ-N6I"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Editar Serviço" id="quE-e3-JZg">
+                        <barButtonItem key="leftBarButtonItem" title="Cancelar" id="CYK-aD-xxZ">
+                            <connections>
+                                <action selector="CancelarBtnPress:" destination="Zg7-Vh-RgJ" id="kJO-u1-ElI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Salvar" style="done" id="9ZD-Oh-fzP"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="precoCombSwitch" destination="3di-AK-rXS" id="fYw-KA-lDz"/>
+                        <outlet property="valorServicoField" destination="RyG-yT-p9Q" id="cHj-gy-qI7"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kkh-MK-BwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3760.8000000000002" y="1646.6266866566718"/>
+        </scene>
         <!--Info ProfissionalTVC-->
         <scene sceneID="Pql-bU-asT">
             <objects>
@@ -971,7 +1112,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3w4-3C-rY1">
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3w4-3C-rY1">
                                                     <rect key="frame" x="8" y="8" width="359" height="103.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="La6-bz-m4W">
@@ -1442,6 +1583,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OMF-GJ-tkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1197.5999999999999" y="1827.8860569715143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jxf-Cc-WIR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3yc-mN-Saa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="JeF-C5-0IO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="0.28627450980392155" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zg7-Vh-RgJ" kind="relationship" relationship="rootViewController" id="he5-uf-mu5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6La-PZ-KYb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2821.5999999999999" y="1646.6266866566718"/>
         </scene>
     </scenes>
     <resources>

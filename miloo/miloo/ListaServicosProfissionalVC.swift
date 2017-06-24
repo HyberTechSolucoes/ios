@@ -46,4 +46,8 @@ class ListaServicosProfissionalVC: UIViewController, UITableViewDelegate, UITabl
         return servicos.count
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "editarServicoSG", sender: nil)
+    }
+    
 }
