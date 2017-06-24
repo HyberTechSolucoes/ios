@@ -49,7 +49,7 @@ class ResultadoBuscaDetalhesVC: UIViewController, UINavigationControllerDelegate
 
     @IBAction func capaBtnPress(_ sender: Any) {
     
-        let optionMenu = UIAlertController(title: nil, message: "Alterar imagens de perfil", preferredStyle: .actionSheet)
+        let optionMenu = UIAlertController(title: nil, message: "Editar perfil", preferredStyle: .actionSheet)
 
         let altFoto = UIAlertAction(title: "Alterar foto do perfil", style: .default, handler: {
             (alert: UIAlertAction!) -> Void in
@@ -64,6 +64,19 @@ class ResultadoBuscaDetalhesVC: UIViewController, UINavigationControllerDelegate
             
         })
         
+        let altContato = UIAlertAction(title: "Alterar dados do contato", style: .default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            
+            //criando programaticamente uma segue
+            
+            let editarContatoSG = self.storyboard?.instantiateViewController(withIdentifier: "EditarContatoTVC") as! UINavigationController
+            
+            self.present(editarContatoSG, animated: true, completion: nil)
+            
+           // self.performSegue(withIdentifier: "editarContatoSG", sender: nil)
+            
+        })
+        
         let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: {
             (alert: UIAlertAction!) -> Void in
             
@@ -71,6 +84,7 @@ class ResultadoBuscaDetalhesVC: UIViewController, UINavigationControllerDelegate
         
         optionMenu.addAction(altFoto)
         optionMenu.addAction(altCapa)
+        optionMenu.addAction(altContato)
         optionMenu.addAction(cancelAction)
         
         self.present(optionMenu, animated: true, completion: nil)
@@ -96,5 +110,7 @@ class ResultadoBuscaDetalhesVC: UIViewController, UINavigationControllerDelegate
         
        // imgCapa.image = image
     }
+   
+    
     
 }

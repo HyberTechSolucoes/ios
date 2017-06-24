@@ -47,6 +47,14 @@ class InfoProfissionalTVC: UITableViewController, UICollectionViewDelegate, UICo
         }
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        if indexPath.section == 1 && indexPath.row >= 1 && indexPath.row <= 6 {
+            performSegue(withIdentifier: "jornadaTrabalhoSG", sender: nil)
+        }
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == 0{
             self.pickImage()

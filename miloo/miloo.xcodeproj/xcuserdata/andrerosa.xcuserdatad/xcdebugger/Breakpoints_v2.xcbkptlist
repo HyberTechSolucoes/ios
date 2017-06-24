@@ -35,5 +35,101 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "miloo/ResultadoBuscaDetalhesVC.swift"
+            timestampString = "520023880.522038"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "capaBtnPress(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "miloo.ResultadoBuscaDetalhesVC.capaBtnPress (Any) -&gt; ()"
+                  moduleName = "miloo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/miloo/ios/miloo/miloo/ResultadoBuscaDetalhesVC.swift"
+                  timestampString = "520023881.306834"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "miloo.ResultadoBuscaDetalhesVC.(capaBtnPress (Any) -&gt; ()).(closure #3)"
+                  moduleName = "miloo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/miloo/ios/miloo/miloo/ResultadoBuscaDetalhesVC.swift"
+                  timestampString = "520023881.313515"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "miloo/ResultadoBuscaDetalhesVC.swift"
+            timestampString = "520024498.938869"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "capaBtnPress(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "miloo.ResultadoBuscaDetalhesVC.capaBtnPress (Any) -&gt; ()"
+                  moduleName = "miloo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/miloo/ios/miloo/miloo/ResultadoBuscaDetalhesVC.swift"
+                  timestampString = "520023905.606451"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "694">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "miloo.ResultadoBuscaDetalhesVC.(capaBtnPress (Any) -&gt; ()).(closure #3)"
+                  moduleName = "miloo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andrerosa/Documents/GIT/miloo/ios/miloo/miloo/ResultadoBuscaDetalhesVC.swift"
+                  timestampString = "520023905.610084"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -36,6 +36,8 @@
 		54C7AA981EFEA08700DEDEDC /* GaleriaProfissional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7AA971EFEA08700DEDEDC /* GaleriaProfissional.swift */; };
 		54C7AA9A1EFEA3FA00DEDEDC /* ImgGaleriaProfissionalCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7AA991EFEA3FA00DEDEDC /* ImgGaleriaProfissionalCVC.swift */; };
 		54C7AA9C1EFEDDE000DEDEDC /* EditarServicoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7AA9B1EFEDDE000DEDEDC /* EditarServicoTVC.swift */; };
+		54C7AA9E1EFEEB2000DEDEDC /* EditarContatoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7AA9D1EFEEB2000DEDEDC /* EditarContatoTVC.swift */; };
+		54C7AAA01EFEFDA700DEDEDC /* EditarJornadaTrabalhoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7AA9F1EFEFDA700DEDEDC /* EditarJornadaTrabalhoTVC.swift */; };
 		92615AF01ED5F16900CAB30B /* NovoEnderecoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92615AEF1ED5F16900CAB30B /* NovoEnderecoTVC.swift */; };
 		92615AF21ED6176900CAB30B /* IndiqueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92615AF11ED6176900CAB30B /* IndiqueVC.swift */; };
 		926690741ECC826B005896F9 /* EsqueciSenhaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926690731ECC826B005896F9 /* EsqueciSenhaVC.swift */; };
@@ -80,6 +82,8 @@
 		54C7AA971EFEA08700DEDEDC /* GaleriaProfissional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GaleriaProfissional.swift; sourceTree = "<group>"; };
 		54C7AA991EFEA3FA00DEDEDC /* ImgGaleriaProfissionalCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImgGaleriaProfissionalCVC.swift; sourceTree = "<group>"; };
 		54C7AA9B1EFEDDE000DEDEDC /* EditarServicoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditarServicoTVC.swift; sourceTree = "<group>"; };
+		54C7AA9D1EFEEB2000DEDEDC /* EditarContatoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditarContatoTVC.swift; sourceTree = "<group>"; };
+		54C7AA9F1EFEFDA700DEDEDC /* EditarJornadaTrabalhoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditarJornadaTrabalhoTVC.swift; sourceTree = "<group>"; };
 		92615AEF1ED5F16900CAB30B /* NovoEnderecoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoEnderecoTVC.swift; sourceTree = "<group>"; };
 		92615AF11ED6176900CAB30B /* IndiqueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndiqueVC.swift; sourceTree = "<group>"; };
 		926690731ECC826B005896F9 /* EsqueciSenhaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EsqueciSenhaVC.swift; sourceTree = "<group>"; };
@@ -167,6 +171,8 @@
 				549D72D01EF222CC00EFD263 /* ListaAvaliacoesProfissionalVC.swift */,
 				549D72D81EF45A2C00EFD263 /* InfoProfissionalTVC.swift */,
 				54C7AA9B1EFEDDE000DEDEDC /* EditarServicoTVC.swift */,
+				54C7AA9D1EFEEB2000DEDEDC /* EditarContatoTVC.swift */,
+				54C7AA9F1EFEFDA700DEDEDC /* EditarJornadaTrabalhoTVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -299,11 +305,13 @@
 				54C7AA9A1EFEA3FA00DEDEDC /* ImgGaleriaProfissionalCVC.swift in Sources */,
 				549D72CD1EF20C3300EFD263 /* Servico.swift in Sources */,
 				549D72D31EF2232E00EFD263 /* Avaliacao.swift in Sources */,
+				54C7AA9E1EFEEB2000DEDEDC /* EditarContatoTVC.swift in Sources */,
 				54703B541ED7E80A004426FA /* ResultadoBuscaCell.swift in Sources */,
 				54703B501ED78D9F004426FA /* ServicoCategoriaCell.swift in Sources */,
 				54C7AA9C1EFEDDE000DEDEDC /* EditarServicoTVC.swift in Sources */,
 				54703B4C1ED78CBD004426FA /* ServicosCategoriasTVC.swift in Sources */,
 				549D72CF1EF20DBE00EFD263 /* ServicoCell.swift in Sources */,
+				54C7AAA01EFEFDA700DEDEDC /* EditarJornadaTrabalhoTVC.swift in Sources */,
 				54703B571ED7EB8D004426FA /* RoundedImage.swift in Sources */,
 				549D72CB1EF1EE8000EFD263 /* ListaServicosProfissionalVC.swift in Sources */,
 				92CA631C1ED5D52800A34AE8 /* ConfigTVC.swift in Sources */,
