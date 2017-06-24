@@ -18,7 +18,7 @@ class ListaServicosProfissionalVC: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
 
         for i in 0...10{
-            servicos.append(Servico(titulo: "Servico \(i)", descricao: "Teste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricaoTeste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricao ", preco: "20,00"))
+            servicos.append(Servico(titulo: "Servico \(i)", descricao: "Teste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricaoTeste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricao Teste de descricao ", preco: "R$ 20,00"))
         }
         
         tableView.rowHeight = UITableViewAutomaticDimension
