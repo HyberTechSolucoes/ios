@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ResultadoBuscaDetalhesVC: UIViewController, UINavigationControllerDelegate,UIImagePickerControllerDelegate {
+class ResultadoBuscaDetalhesVC: UIViewController {
 
     @IBOutlet weak var imgPerfil: RoundedImage!
     @IBOutlet weak var imgCapa: UIImageView!
@@ -16,16 +16,12 @@ class ResultadoBuscaDetalhesVC: UIViewController, UINavigationControllerDelegate
     @IBOutlet weak var containerAvaliacoes: UIView!
     @IBOutlet weak var containerServicos: UIView!
     @IBOutlet weak var containerInfo: UIView!
-    
-    let imagePicker = UIImagePickerController()
   
     override func viewDidLoad() {
         super.viewDidLoad()
         containerAvaliacoes.isHidden = true
         containerServicos.isHidden = false
         containerInfo.isHidden = true
-        
-        imagePicker.delegate = self
         
     }
     @IBAction func tabTouch(_ sender: Any) {
@@ -47,70 +43,5 @@ class ResultadoBuscaDetalhesVC: UIViewController, UINavigationControllerDelegate
         }
     }
 
-    @IBAction func capaBtnPress(_ sender: Any) {
-    
-        let optionMenu = UIAlertController(title: nil, message: "Editar perfil", preferredStyle: .actionSheet)
 
-        let altFoto = UIAlertAction(title: "Alterar foto do perfil", style: .default, handler: {
-            (alert: UIAlertAction!) -> Void in
-            
-            self.pickImage()
-            
-        })
-        let altCapa = UIAlertAction(title: "Alterar foto da capa", style: .default, handler: {
-            (alert: UIAlertAction!) -> Void in
-            
-            self.pickImage()
-            
-        })
-        
-        let altContato = UIAlertAction(title: "Alterar dados do contato", style: .default, handler: {
-            (alert: UIAlertAction!) -> Void in
-            
-            //criando programaticamente uma segue
-            
-            let editarContatoSG = self.storyboard?.instantiateViewController(withIdentifier: "EditarContatoTVC") as! UINavigationController
-            
-            self.present(editarContatoSG, animated: true, completion: nil)
-            
-           // self.performSegue(withIdentifier: "editarContatoSG", sender: nil)
-            
-        })
-        
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: {
-            (alert: UIAlertAction!) -> Void in
-            
-        })
-        
-        optionMenu.addAction(altFoto)
-        optionMenu.addAction(altCapa)
-        optionMenu.addAction(altContato)
-        optionMenu.addAction(cancelAction)
-        
-        self.present(optionMenu, animated: true, completion: nil)
-    }
-    
-    func pickImage(){
-        
-        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
-            
-            self.imagePicker.delegate = self
-            self.imagePicker.sourceType = .savedPhotosAlbum;
-            self.imagePicker.allowsEditing = false
-            
-            self.present(self.imagePicker, animated: true, completion: nil)
-        }
-    }
-    
- 
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: NSDictionary!){
-        self.dismiss(animated: true, completion: { () -> Void in
-            
-        })
-        
-       // imgCapa.image = image
-    }
-   
-    
-    
 }

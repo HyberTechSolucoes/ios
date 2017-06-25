@@ -18,9 +18,13 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xHC-fT-5jX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xHC-fT-5jX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.28627450980000002" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -31,7 +35,7 @@
             </objects>
             <point key="canvasLocation" x="289" y="887"/>
         </scene>
-        <!--View Controller-->
+        <!--Notificações-->
         <scene sceneID="19M-Fh-IOm">
             <objects>
                 <viewController id="UKa-DE-ivn" sceneMemberID="viewController">
@@ -42,9 +46,16 @@
                     <view key="view" contentMode="scaleToFill" id="0er-gm-s8r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqf-r1-Ta6">
+                                <rect key="frame" x="208" y="363" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tON-ic-BcF"/>
+                    <navigationItem key="navigationItem" title="Notificações" id="tON-ic-BcF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttM-ux-EyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
