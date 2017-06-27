@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EuVC: UIViewController {
+class EuTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
