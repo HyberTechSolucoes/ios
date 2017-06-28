@@ -265,14 +265,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Resultado" id="00G-j0-kGo">
                         <rightBarButtonItems>
-                            <barButtonItem image="busca_icon" id="T0e-jg-48R">
-                                <inset key="imageInsets" minX="2" minY="5" maxX="2" maxY="5"/>
+                            <barButtonItem systemItem="search" id="T0e-jg-48R">
                                 <connections>
                                     <action selector="searchBtnPress:" destination="6v6-zn-ymt" id="DsR-tl-uOf"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="filter_icon" id="B7P-mJ-hNJ">
-                                <inset key="imageInsets" minX="1" minY="4" maxX="1" maxY="4"/>
                                 <connections>
                                     <segue destination="Y9O-DQ-Y0Q" kind="popoverPresentation" popoverAnchorBarButtonItem="B7P-mJ-hNJ" id="TpN-yA-eZK">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -494,7 +492,7 @@
                                 <segments>
                                     <segment title="Serviços"/>
                                     <segment title="Avaliações"/>
-                                    <segment title="Info"/>
+                                    <segment title="Mais"/>
                                 </segments>
                                 <color key="tintColor" red="0.92156862750000001" green="0.37254901959999998" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -655,16 +653,16 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kpZ-Jg-Me5">
-                                                            <rect key="frame" x="60" y="5" width="213" height="36.5"/>
+                                                            <rect key="frame" x="60" y="5" width="137" height="36.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Daenerys Targerien" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EnH-bR-vpf">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="213" height="18"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="137" height="18"/>
                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 de mai de 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPX-ee-Hfr">
-                                                                    <rect key="frame" x="0.0" y="22" width="213" height="14.5"/>
+                                                                    <rect key="frame" x="0.0" y="22" width="137" height="14.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                     <color key="textColor" red="0.38039215686274508" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -672,38 +670,38 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TIN-mU-RlR">
-                                                            <rect key="frame" x="287" y="17" width="64" height="12"/>
+                                                            <rect key="frame" x="211" y="23" width="140" height="0.0"/>
                                                             <subviews>
-                                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="0XO-Hr-DRS">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="0XO-Hr-DRS">
+                                                                    <rect key="frame" x="-219" y="-31" width="0.0" height="12"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="12" id="9e3-gF-LQK"/>
                                                                         <constraint firstAttribute="width" constant="12" id="fQn-Jz-DkB"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="GTZ-aP-EfM">
-                                                                    <rect key="frame" x="13" y="0.0" width="12" height="12"/>
+                                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="GTZ-aP-EfM">
+                                                                    <rect key="frame" x="-219" y="-31" width="0.0" height="12"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="12" id="VkH-7A-MDm"/>
                                                                         <constraint firstAttribute="height" constant="12" id="xxu-M0-hSA"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="5fQ-tw-edG">
-                                                                    <rect key="frame" x="26" y="0.0" width="12" height="12"/>
+                                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="5fQ-tw-edG">
+                                                                    <rect key="frame" x="-219" y="-31" width="0.0" height="12"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="12" id="Ijt-jh-kEw"/>
                                                                         <constraint firstAttribute="height" constant="12" id="qYX-5V-9xB"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="chW-Pv-ReQ">
-                                                                    <rect key="frame" x="39" y="0.0" width="12" height="12"/>
+                                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="chW-Pv-ReQ">
+                                                                    <rect key="frame" x="-219" y="-31" width="0.0" height="12"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="12" id="4qS-0s-nlT"/>
                                                                         <constraint firstAttribute="width" constant="12" id="ktb-bJ-z63"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="BC8-cJ-qkv">
-                                                                    <rect key="frame" x="52" y="0.0" width="12" height="12"/>
+                                                                <imageView hidden="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="BC8-cJ-qkv">
+                                                                    <rect key="frame" x="-219" y="-31" width="0.0" height="12"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="12" id="FgT-TF-JW5"/>
                                                                         <constraint firstAttribute="width" constant="12" id="acK-T7-Z17"/>
@@ -936,7 +934,7 @@
                                                             <rect key="frame" x="0.0" y="0.5" width="102" height="102.5"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                                <rect key="frame" x="0.0" y="0.0" width="102" height="102"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="102" height="103"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="informatica_cover" translatesAutoresizingMaskIntoConstraints="NO" id="396-bI-gGu">
@@ -1395,7 +1393,7 @@
         <image name="casa_icon" width="67" height="67"/>
         <image name="daenerys" width="50" height="50"/>
         <image name="estetica_icon" width="62" height="61"/>
-        <image name="filter_icon" width="26" height="21"/>
+        <image name="filter_icon" width="26" height="20"/>
         <image name="informatica_cover" width="375" height="178"/>
         <image name="phone_icon_red" width="24" height="24"/>
         <image name="pin_icon_red" width="18" height="24"/>
