@@ -51,6 +51,10 @@
 		92615AF01ED5F16900CAB30B /* NovoEnderecoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92615AEF1ED5F16900CAB30B /* NovoEnderecoTVC.swift */; };
 		92615AF21ED6176900CAB30B /* IndiqueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92615AF11ED6176900CAB30B /* IndiqueVC.swift */; };
 		926690741ECC826B005896F9 /* EsqueciSenhaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926690731ECC826B005896F9 /* EsqueciSenhaVC.swift */; };
+		9276C8FB1F25598200DDAD23 /* AgendaTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9276C8FA1F25598200DDAD23 /* AgendaTVC.swift */; };
+		9276C8FD1F2559D000DDAD23 /* AgendaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9276C8FC1F2559D000DDAD23 /* AgendaCell.swift */; };
+		9276C8FF1F255B0300DDAD23 /* AgendaServico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9276C8FE1F255B0300DDAD23 /* AgendaServico.swift */; };
+		9276C9011F2565FF00DDAD23 /* AgendaFiltroTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9276C9001F2565FF00DDAD23 /* AgendaFiltroTVC.swift */; };
 		9298319A1ED51D1E00506542 /* MeusDadosTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929831991ED51D1E00506542 /* MeusDadosTVC.swift */; };
 		9298319C1ED5BE2400506542 /* EnderecoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298319B1ED5BE2400506542 /* EnderecoCell.swift */; };
 		9298319E1ED5C0FC00506542 /* Endereco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9298319D1ED5C0FC00506542 /* Endereco.swift */; };
@@ -107,6 +111,10 @@
 		92615AEF1ED5F16900CAB30B /* NovoEnderecoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NovoEnderecoTVC.swift; sourceTree = "<group>"; };
 		92615AF11ED6176900CAB30B /* IndiqueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndiqueVC.swift; sourceTree = "<group>"; };
 		926690731ECC826B005896F9 /* EsqueciSenhaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EsqueciSenhaVC.swift; sourceTree = "<group>"; };
+		9276C8FA1F25598200DDAD23 /* AgendaTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaTVC.swift; sourceTree = "<group>"; };
+		9276C8FC1F2559D000DDAD23 /* AgendaCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaCell.swift; sourceTree = "<group>"; };
+		9276C8FE1F255B0300DDAD23 /* AgendaServico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaServico.swift; sourceTree = "<group>"; };
+		9276C9001F2565FF00DDAD23 /* AgendaFiltroTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaFiltroTVC.swift; sourceTree = "<group>"; };
 		929831991ED51D1E00506542 /* MeusDadosTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusDadosTVC.swift; sourceTree = "<group>"; };
 		9298319B1ED5BE2400506542 /* EnderecoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnderecoCell.swift; sourceTree = "<group>"; };
 		9298319D1ED5C0FC00506542 /* Endereco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endereco.swift; sourceTree = "<group>"; };
@@ -169,6 +177,7 @@
 				549D72D21EF2232E00EFD263 /* Avaliacao.swift */,
 				54C7AA971EFEA08700DEDEDC /* GaleriaProfissional.swift */,
 				540BA64C1F01DA530053B2A7 /* Notificacao.swift */,
+				9276C8FE1F255B0300DDAD23 /* AgendaServico.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -233,6 +242,8 @@
 				54C7AA9D1EFEEB2000DEDEDC /* EditarContatoTVC.swift */,
 				54C7AA9B1EFEDDE000DEDEDC /* EditarServicoTVC.swift */,
 				54C7AA9F1EFEFDA700DEDEDC /* EditarJornadaTrabalhoTVC.swift */,
+				9276C8FA1F25598200DDAD23 /* AgendaTVC.swift */,
+				9276C9001F2565FF00DDAD23 /* AgendaFiltroTVC.swift */,
 			);
 			name = Profissional;
 			sourceTree = "<group>";
@@ -270,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				549D72D41EF22A8D00EFD263 /* AvaliacaoCell.swift */,
+				9276C8FC1F2559D000DDAD23 /* AgendaCell.swift */,
 			);
 			name = Profissional;
 			sourceTree = "<group>";
@@ -379,16 +391,20 @@
 				54C7AA9C1EFEDDE000DEDEDC /* EditarServicoTVC.swift in Sources */,
 				54703B4C1ED78CBD004426FA /* ServicosCategoriasTVC.swift in Sources */,
 				549D72CF1EF20DBE00EFD263 /* ServicoCell.swift in Sources */,
+				9276C8FB1F25598200DDAD23 /* AgendaTVC.swift in Sources */,
 				540BA6491F01D8A90053B2A7 /* NotificacaoCell.swift in Sources */,
 				54C7AAA01EFEFDA700DEDEDC /* EditarJornadaTrabalhoTVC.swift in Sources */,
 				54703B571ED7EB8D004426FA /* RoundedImage.swift in Sources */,
 				549D72CB1EF1EE8000EFD263 /* ListaServicosProfissionalVC.swift in Sources */,
+				9276C8FD1F2559D000DDAD23 /* AgendaCell.swift in Sources */,
 				54C7AAAA1F001B5F00DEDEDC /* infoProfissionalBuscaTVC.swift in Sources */,
 				54C7AAA71F00186F00DEDEDC /* ServicoDetalhesVC.swift in Sources */,
 				92CA631C1ED5D52800A34AE8 /* ConfigTVC.swift in Sources */,
 				546FAD241ECBAD48003BD7F4 /* AppDelegate.swift in Sources */,
 				929F461B1ECBC98D004CFAC8 /* CadastroVC.swift in Sources */,
 				92615AF01ED5F16900CAB30B /* NovoEnderecoTVC.swift in Sources */,
+				9276C9011F2565FF00DDAD23 /* AgendaFiltroTVC.swift in Sources */,
+				9276C8FF1F255B0300DDAD23 /* AgendaServico.swift in Sources */,
 				9298319E1ED5C0FC00506542 /* Endereco.swift in Sources */,
 				546FAD2C1ECBAD48003BD7F4 /* miloo.xcdatamodeld in Sources */,
 				54C7AAAC1F0024A000DEDEDC /* ListaServicosProfissionalBuscaVC.swift in Sources */,
