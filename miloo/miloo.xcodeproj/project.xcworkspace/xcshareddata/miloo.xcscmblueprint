@@ -10,7 +10,7 @@
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E63AE5F2-27A0-411D-BEFD-9930E340DB62",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "865275D11C7BC56C800B87291731D2CB9148EA36" : "ios\/",
-    "261404893310EC1BAED984EFCA9367605CC71089" : ".."
+    "261404893310EC1BAED984EFCA9367605CC71089" : "..\/.."
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "miloo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,

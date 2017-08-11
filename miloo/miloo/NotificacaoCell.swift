@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NotificacaoCell: UITableViewCell {
+@IBDesignable class NotificacaoCell: UITableViewCell {
     
     @IBOutlet weak var imagem: UIImageView!
     @IBOutlet weak var notificacaoMsg: UILabel!
